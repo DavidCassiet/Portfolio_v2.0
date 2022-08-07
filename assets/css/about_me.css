@@ -1,0 +1,31 @@
+.about_me {
+  align-items: center;
+  /* background-color: #00b4d8; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  vertical-align: middle;
+}
+
+.about_me__text {
+  color: #fff;
+  font-size: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+  text-align: justify;
+  text-shadow: 2px 2px 2px #304a6e;
+  vertical-align: middle;
+}
+
+@media screen and (min-width: 1024px) {
+  .about_me {
+    flex-direction: row;
+    padding-top: 4rem;
+  }
+  .about_me__text {
+    font-size: 1.4rem;
+    order: -1;
+    padding: 2rem;
+    width: 60%;
+  }
+}
