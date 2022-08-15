@@ -4,24 +4,49 @@ const proyectsDescriptions = document.querySelectorAll(
   ".proyects__item-textContainer"
 );
 let i = 0;
-let proyectImg;
-let proyectDescription;
 
 proyectsItems.forEach((item, index) => {
   item.addEventListener("mouseenter", () => {
     i = index;
-    proyectsImgs[i].addEventListener("mouseenter", mouseEnter);
+    proyectsImgs[i].addEventListener("mouseenter", mouseOver);
     proyectsImgs[i].addEventListener("mouseleave", mouseLeave);
   });
 });
 
-function mouseEnter() {
-  setTimeout(() => {
-    proyectsDescriptions[i].classList.add("img-hover");
-  }, 100);
+function mouseOver() {
+  const style = window.getComputedStyle(proyectsImgs[i]);
+  proyectsImgs[i].style.minWidth = "100%";
+
+  // while (proyectsImgs[i].clientWidth != proyectsItems[i].clientWidth) {
+  //   console.log(proyectsImgs[i].clientWidth);
+  //   console.log(proyectsItems[i].clientWidth);
+  // }
+
+  // proyectsDescriptions[i].style.opacity = "100%";
+
+  // callBackF(proyectsImgs[i].clientWidth);
+
+  // while (
+  //   proyectsImgs[i].clientWidth ==
+  //   proyectsItems[i].clientWidth -
+  //     parseInt(style.getPropertyValue("border-width")) * 2
+  // ) {
+  // proyectsDescriptions[i].style.opacity = "100%";
+  //   break;
+  // }
 }
 function mouseLeave() {
-  proyectsImgs[i].removeEventListener("mouseenter", mouseEnter, false);
-  proyectsDescriptions[i].classList.remove("img-hover");
+  proyectsImgs[i].removeEventListener("mouseover", mouseOver, false);
+  proyectsImgs[i].style.minWidth = "80%";
+  // proyectsDescriptions[i].style.opacity = "0%";
+  // proyectsDescriptions[i].style.opacity = "0%";
   proyectsImgs[i].removeEventListener("mouseleave", mouseLeave);
 }
+
+// function callBackF(param) {
+//   if (param == proyectsItems[i].clientWidth) {
+//     proyectsDescriptions[i].style.display = "flex";
+//   } else {
+//     return callBackF(param);
+//   }
+// }

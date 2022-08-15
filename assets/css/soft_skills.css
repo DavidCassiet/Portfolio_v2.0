@@ -3,9 +3,6 @@
 }
 .soft_skills__content {
   backdrop-filter: blur(2px);
-  /* border-top-left-radius: 16rem 6rem;
-  border-bottom-right-radius: 16rem 6rem;
-  box-shadow: inset 0 0 60px #00b4d8; */
   display: flex;
   flex-direction: column;
   padding: 2rem 0;
