@@ -1,0 +1,85 @@
+.hard_skills {
+  /* padding: 0; */
+  /* align-items: center; */
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+.hard_skills__content {
+  display: flex;
+}
+.hard_skills__list {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 120px 120px;
+  justify-content: center;
+  margin-top: 1rem;
+}
+.hard_skills__item {
+  align-items: center;
+  background: rgba(0, 180, 216, 0.2);
+  border: 2px solid #80ffdb;
+  border-radius: 2rem;
+  display: flex;
+  flex-direction: column;
+  height: 120px;
+  position: relative;
+  justify-content: center;
+  transition: 0.3s all ease-in-out;
+}
+.hard_skills__item:hover {
+  transform: translateY(-3px);
+}
+.hard_skills__item img {
+  filter: brightness(0) invert();
+  height: 50%;
+  padding: 0.3rem;
+  transition: all 1s ease-out;
+}
+
+#javascript,
+#html5,
+#css3 {
+  filter: brightness(0) invert() drop-shadow(0 0 1px #ffffff);
+  transition: all 1s ease-out;
+}
+#djangoLogo {
+  padding: 0;
+}
+.hard_skills__item p {
+  color: #ffffff;
+  font-size: 1rem;
+  text-shadow: 0 0 10px #001845;
+}
+.hard_skills__item:hover img,
+.hard_skills__item:hover #javascript,
+.hard_skills__item:hover #html5,
+.hard_skills__item:hover #css3 {
+  transform: rotate3d(0, 1, 0, 6rad);
+  filter: drop-shadow(0 0 1px #ffffff);
+}
+
+@media screen and (min-width: 1024px) {
+  .hard_skills {
+    height: 100vh;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .hard_skills__list {
+    gap: 2rem;
+    grid-template-columns: 130px 130px 130px 130px;
+    margin-top: 2rem;
+  }
+  .hard_skills__item {
+    height: 130px;
+  }
+  .hard_skills__item img {
+    width: 60%;
+  }
+  .hard_skills__item p {
+    font-size: 1rem;
+  }
+}
