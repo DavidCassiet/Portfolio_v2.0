@@ -1,4 +1,4 @@
-.banner {
+  .banner {
   align-items: center;
   color: #ffffff;
   display: flex;
@@ -97,7 +97,7 @@
   width: 300px;
 }
 .banner__model {
-  background: url(../img/ash-edmonds-gcINRBbUxl0-unsplash.jpg) center / cover
+  background: url(../img/model-background.jpg) center / cover
     no-repeat;
   border-radius: 100%;
   width: 98%;

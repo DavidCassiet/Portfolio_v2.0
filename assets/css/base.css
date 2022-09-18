@@ -31,7 +31,7 @@ body {
 
 @media screen and (min-width: 1024px) {
   body {
-    background: url(../img/background4.png) center / cover no-repeat,
+    background: url(../img/background.png) center / cover no-repeat,
       linear-gradient(45deg, #001f54, #b5179e) fixed;
     backdrop-filter: blur(8px) brightness(0.6);
     height: 100vh;

@@ -1,15 +1,10 @@
 .hard_skills {
-  /* padding: 0; */
-  /* align-items: center; */
   color: #ffffff;
   display: flex;
   justify-content: center;
   flex-direction: column;
   padding-top: 2rem;
   padding-bottom: 2rem;
-}
-.hard_skills__content {
-  display: flex;
 }
 .hard_skills__list {
   display: grid;
@@ -33,6 +28,10 @@
 .hard_skills__item:hover {
   transform: translateY(-3px);
 }
+.hard_skills__item:hover img,
+.hard_skills__item:hover .transparent-img {
+  filter: drop-shadow(0 0 1px #ffffff);
+}
 .hard_skills__item img {
   filter: brightness(0) invert();
   height: 50%;
@@ -40,9 +39,7 @@
   transition: all 1s ease-out;
 }
 
-#javascript,
-#html5,
-#css3 {
+.hard_skills__item .transparent-img {
   filter: brightness(0) invert() drop-shadow(0 0 1px #ffffff);
   transition: all 1s ease-out;
 }
@@ -53,13 +50,6 @@
   color: #ffffff;
   font-size: 1rem;
   text-shadow: 0 0 10px #001845;
-}
-.hard_skills__item:hover img,
-.hard_skills__item:hover #javascript,
-.hard_skills__item:hover #html5,
-.hard_skills__item:hover #css3 {
-  transform: rotate3d(0, 1, 0, 6rad);
-  filter: drop-shadow(0 0 1px #ffffff);
 }
 
 @media screen and (min-width: 1024px) {
@@ -76,8 +66,12 @@
   .hard_skills__item {
     height: 130px;
   }
+  .hard_skills__item:hover img,
+  .hard_skills__item:hover .transparent-img {
+    transform: rotate3d(0, 1, 0, 6rad);
+  }
   .hard_skills__item img {
-    width: 60%;
+    height: 60%;
   }
   .hard_skills__item p {
     font-size: 1rem;
