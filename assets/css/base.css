@@ -5,21 +5,27 @@
   --box-shadow: #304a6e;
   --text-shadow: #304a6e;
 }
-
 html {
   scroll-behavior: smooth;
 }
 body {
   font-family: "Montserrat", sans-serif;
   background: linear-gradient(45deg, rgba(0, 115, 170, 255), #001f54 70%) fixed;
-  /* background: linear-gradient(45deg, #7209b7, #001f54 70%) fixed; */
   backdrop-filter: blur(8px) brightness(0.8);
   scroll-behavior: smooth;
+}
+.slider {
+  height: 100%;
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
+.slider section {
+  scroll-snap-align: center;
 }
 .container {
   padding: 0 6%;
 }
-
 .section-title {
   border-bottom: 2px solid #ffffff;
   display: flex;
@@ -36,19 +42,10 @@ body {
     backdrop-filter: blur(8px) brightness(0.6);
     height: 100vh;
   }
-  .slider {
-    height: 100%;
-    scroll-snap-type: y mandatory;
-    overflow-y: scroll;
-  }
-  .slider section {
-    scroll-snap-align: center;
-  }
   .container {
     padding-left: calc((100% - 940px) / 2);
     padding-right: calc((100% - 940px) / 2);
   }
-
   .section-title {
     font-size: 2.5rem;
   }

@@ -16,8 +16,6 @@
     <link rel="stylesheet" href="assets/css/hard_skills.css" />
     <link rel="stylesheet" href="assets/css/education.css" />
     <link rel="stylesheet" href="assets/css/proyects.css" />
-    <link rel="stylesheet" href="assets/css/contact.css" />
-    <link rel="stylesheet" href="assets/css/footer.css" />
     <link rel="icon" href="assets/img/davidcassiet-logo.ico" />
     <script
       src="https://kit.fontawesome.com/fb210e319c.js"
@@ -29,29 +27,54 @@
     <header class="head">
       <nav class="head__nav">
         <ul class="head__list">
-          <li class="head__item">
-            <a href="#aboutMe">Sobre mi</a>
+          <li class="head__item logo-item">
+            <a href="#banner"
+              ><img
+                src="assets/img/davidcassiet-logo.png"
+                alt="david cassiet logo"
+                class="logo-img"
+            /></a>
           </li>
           <li class="head__item">
-            <a href="#hardSkills">Herramientas</a>
+            <a href="#aboutMe"
+              ><h5>Sobre mi</h5>
+              <img src="assets/img/nav/about-me.png" alt=""
+            /></a>
           </li>
           <li class="head__item">
-            <a href="#education">Educación</a>
+            <a href="#hardSkills"
+              ><h5>Herramientas</h5>
+              <img src="assets/img/nav/skills.png" alt=""
+            /></a>
           </li>
           <li class="head__item">
-            <a href="#proyects">Proyectos</a>
+            <a href="#education"
+              ><h5>Educación</h5>
+              <img src="assets/img/nav/education.png" alt=""
+            /></a>
           </li>
-          <li class="head__item"><a href="#contact">Contacto</a></li>
+          <li class="head__item">
+            <a href="#proyects"
+              ><h5>Proyectos</h5>
+              <img src="assets/img/nav/proyects.png" alt=""
+            /></a>
+          </li>
+          <!-- <li class="head__item">
+            <a href="mailto:davidcassiet@gmail.com"
+              ><h5>Contacto</h5>
+              <img src="assets/img/nav/contact.png" alt=""
+            /></a>
+          </li> -->
         </ul>
       </nav>
     </header>
     <main class="slider">
-      <section class="banner container">
+      <section id="banner" class="banner container">
         <div class="banner__text-container">
           <h1 class="banner__title">David Cassiet</h1>
           <h3 class="banner__subtitle">
             Desarrollador Java
-            <img src="assets/img/skills/java_color.png" alt="Java logo" />
+            <img src="assets/img/skills/java_color.png" alt="java logo" />
           </h3>
           <ul class="banner__media">
             <li class="banner__item">
@@ -72,6 +95,15 @@
                 ><i class="fab fa-github"></i
               ></a>
             </li>
+            <li class="banner__item">
+              <a
+                href="mailto:davidcassiet@gmail.com"
+                class="mail"
+                target="_blank"
+                title="Mail"
+                ><i class="fa-solid fa-envelope"></i></i
+              ></a>
+            </li>
             <li class="banner__item item_cv">
               <a
                 href="https://drive.google.com/file/d/1A0Fr1PKVUV1EjszRPZwk3_1OPJvvMFrz/view?usp=sharing"
@@ -89,11 +121,9 @@
             <img src="assets/img/model/3Dmodel.png" alt="modelo 3d" />
           </div>
         </div>
-        <img
-          src="assets/img/model/3Dmodel.png"
-          class="banner__model_img"
-          alt="modelo 3d"
-        />
+        <div class="banner__model-container">
+          <img src="assets/img/model/3Dmodel.png" class="banner__model_img" alt="modelo 3d"/>
+        </div>
         <ul class="banner__media">
           <li class="banner__item">
             <a
@@ -111,6 +141,15 @@
               target="_blank"
               title="GitHub"
               ><i class="fab fa-github"></i
+            ></a>
+          </li>
+          <li class="banner__item">
+            <a
+              href="mailto:davidcassiet@gmail.com"
+              class="mail"
+              target="_blank"
+              title="Mail"
+              ><i class="fa-solid fa-envelope"></i></i
             ></a>
           </li>
           <li class="banner__item item_cv">
@@ -164,11 +203,19 @@
         <h4 class="section-title">Herramientas</h4>
         <ul class="hard_skills__list">
           <li class="hard_skills__item">
-            <img src="assets/img/skills/java.png" alt="java logo" />
+            <img
+              src="assets/img/skills/java.png"
+              alt="java logo"
+              loading="eager"
+            />
             <p>Java</p>
           </li>
           <li class="hard_skills__item">
-            <img src="assets/img/skills/spring.png" alt="spring logo" />
+            <img
+              src="assets/img/skills/spring.png"
+              alt="spring logo"
+              loading="eager"
+            />
             <p>Spring</p>
           </li>
           <li class="hard_skills__item">
@@ -179,7 +226,11 @@
             <p>Spring boot</p>
           </li>
           <li class="hard_skills__item">
-            <img src="assets/img/skills/python.png" alt="python logo" />
+            <img
+              src="assets/img/skills/python.png"
+              alt="python logo"
+              loading="eager"
+            />
             <p>Python</p>
           </li>
           <li class="hard_skills__item">
@@ -187,6 +238,7 @@
               id="djangoLogo"
               src="assets/img/skills/django.png"
               alt="django logo"
+              loading="eager"
             />
             <p>Django</p>
           </li>
@@ -195,6 +247,7 @@
               class="transparent-img"
               src="assets/img/skills/javascript.png"
               alt="javascript logo"
+              loading="eager"
             />
             <p>JavaScript</p>
           </li>
@@ -203,6 +256,7 @@
               class="transparent-img"
               src="assets/img/skills/html5.png"
               alt="html5 logo"
+              loading="eager"
             />
             <p>HTML5</p>
           </li>
@@ -211,19 +265,32 @@
               class="transparent-img"
               src="assets/img/skills/css3.png"
               alt="css3 logo"
+              loading="eager"
             />
             <p>CSS3</p>
           </li>
           <li class="hard_skills__item">
-            <img src="assets/img/skills/git.png" alt="git logo" />
+            <img
+              src="assets/img/skills/git.png"
+              alt="git logo"
+              loading="eager"
+            />
             <p>Git</p>
           </li>
           <li class="hard_skills__item">
-            <img src="assets/img/skills/mysql.png" alt="mysql logo" />
+            <img
+              src="assets/img/skills/mysql.png"
+              alt="mysql logo"
+              loading="eager"
+            />
             <p>MySQL</p>
           </li>
           <li class="hard_skills__item">
-            <img src="assets/img/skills/postman.png" alt="postman logo" />
+            <img
+              src="assets/img/skills/postman.png"
+              alt="postman logo"
+              loading="eager"
+            />
             <p>Postman</p>
           </li>
         </ul>
@@ -425,56 +492,6 @@
           </li>
         </ul>
       </section>
-      <section id="contact" class="contact container">
-        <h4 class="section-title">Contacto</h4>
-        <div class="contact__formContainer">
-          <form action="mailto:davidcassiet@gmail.com" class="contact__form">
-            <label for="Email">Correo electrónico</label>
-            <input type="email" class="contact__email" id="Email" required />
-            <label for="Name">Nombre</label>
-            <input type="text" class="contact__name" id="Name" required />
-            <label for="Subject">Asunto</label>
-            <input type="text" class="contact__subject" id="Subject" required />
-            <label for="Message">Mensaje</label>
-            <textarea
-              name=""
-              id="Message"
-              cols="30"
-              rows="10"
-              class="contact__message"
-              spellcheck="false"
-              required
-            ></textarea>
-            <div class="contact_buttonContainer">
-              <button class="contact__button" type="submit">Enviar</button>
-            </div>
-          </form>
-        </div>
-      </section>
     </main>
-    <!-- <footer class="footer container">
-      <ul class="footer__media">
-        <li class="footer__item">
-          <a
-            href="https://www.linkedin.com/in/david-cassiet/"
-            class="linkedin"
-            target="_blank"
-            ><i class="fab fa-linkedin-in"></i
-          ></a>
-        </li>
-        <li class="footer__item">
-          <a
-            href="https://github.com/DavidCassiet"
-            class="github"
-            target="_blank"
-            ><i class="fab fa-github"></i
-          ></a>
-        </li>
-      </ul>
-      <p class="footer__copyright">
-        &copy Desarrollado por David Cassiet - 2022
-      </p>
-    </footer> -->
-    <script src="assets/js/contact.js"></script>
   </body>
 </html>

@@ -1,24 +1,73 @@
+.head {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+.head__nav {
+  padding: 0;
+  height: 100vh;
+  position: absolute;
+}
 .head__list {
-  display: none;
+  display: flex;
   font-family: "Bebas Neue", cursive;
+  justify-content: space-evenly;
   text-shadow: 2px 2px 2px #304a6e;
+  background-color: var(--dark-blue);
+  bottom: 0;
+  position: absolute;
+  width: 100vw;
+}
+.head__item {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  /* margin: 1.5rem 1rem; */
+}
+.head__item a {
+  color: #ffffff;
+  font-size: 1.1rem;
+  padding: 0.5rem;
+  transition: all 0.5s ease-in-out;
+}
+.head__item a:hover {
+  color: #80ffdb;
+  filter: drop-shadow(0 0 20px var(--light-blue));
+}
+.head__item a img {
+  filter: invert();
+  width: 40px;
+}
+.head__item a .logo-img {
+  filter: none;
+  display: flex;
 }
 
-@media screen and (min-width: 1024px) {
-  .head__nav {
+.head__item a h5 {
+  display: none;
+}
+
+@media screen and (min-width: 1400px) {
+  .head {
     padding: 0;
     position: fixed;
-    right: 1rem;
-    z-index: 100;
-    
+    /* z-index: 100; */
+    right: 13rem;
+  }
+  .head__nav {
+    padding: 0;
+    position: relative;
+    /* z-index: 100; */
+    width: 0;
   }
   .head__list {
+    background-color: transparent;
     display: flex;
     flex-direction: column;
+    height: 100%;
     justify-content: center;
     vertical-align: middle;
-    height: 100vh;
-    /* padding-right: 1rem; */
+    width: auto;
   }
   .head__item {
     align-items: center;
@@ -27,20 +76,36 @@
     margin: 1.5rem 1rem;
     height: 120px;
   }
+  .logo-item {
+    height: auto;
+  }
   .head__item a {
+    align-items: center;
     color: #ffffff;
+    display: flex;
     font-size: 2rem;
     padding: 0.5rem;
     border-radius: 30px;
     transform: rotate(90deg);
     transition: all 0.5s ease-in-out;
   }
+  .logo-item a {
+    border-radius: 50%;
+    transform: none;
+  }
   .head__item a:hover {
     color: #80ffdb;
     background: linear-gradient(90deg, transparent, #304a6e);
+    filter: none;
     transform: none;
   }
-  .head__item img {
-    width: 40px;
+  .head__item a img {
+    display: none;
+  }
+  .head__item a .logo-img {
+    width: 70px;
+  }
+  .head__item a h5 {
+    display: flex;
   }
 }

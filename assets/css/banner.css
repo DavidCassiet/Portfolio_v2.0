@@ -48,7 +48,7 @@
   border: 2px solid var(--light-turquoise);
   border-radius: 50%;
   height: 40px;
-  margin: 0.2rem;
+  margin: 0.3rem;
   transition: 0.2s;
   width: 40px;
 }
@@ -63,7 +63,7 @@
   border-radius: 30px;
   font-weight: 700;
   margin-left: 0.4rem;
-  width: 180px;
+  width: 100px;
 }
 .banner__item:hover {
   background-color: var(--light-turquoise);
@@ -141,7 +141,7 @@
     margin-top: 2rem;
   }
   .banner__title {
-    font-size: 8rem;
+    font-size: 6rem;
     justify-content: start;
     text-shadow: 2px 2px 6px #001f54;
   }
@@ -165,6 +165,24 @@
   }
   .banner__model_bg {
     display: none;
+  }
+  .banner__model-container {
+    align-items: flex-end;
+    display: flex;
+    height: 100vh;
+  }
+  .banner__model_img {
+    display: block;
+    height: 90vh;
+    margin: 0;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .banner__title {
+    font-size: 8rem;
+    justify-content: start;
+    text-shadow: 2px 2px 6px #001f54;
   }
   .banner__model_img {
     display: block;

@@ -31,6 +31,7 @@
 .hard_skills__item:hover img,
 .hard_skills__item:hover .transparent-img {
   filter: drop-shadow(0 0 1px #ffffff);
+  transform: rotate3d(0, 1, 0, 6rad);
 }
 .hard_skills__item img {
   filter: brightness(0) invert();
@@ -52,6 +53,14 @@
   text-shadow: 0 0 10px #001845;
 }
 
+@media screen and (min-width: 768px) {
+  .hard_skills__list {
+    gap: 2rem;
+    grid-template-columns: 130px 130px 130px 130px;
+    margin-top: 2rem;
+  }
+}
+
 @media screen and (min-width: 1024px) {
   .hard_skills {
     height: 100vh;
@@ -65,10 +74,6 @@
   }
   .hard_skills__item {
     height: 130px;
-  }
-  .hard_skills__item:hover img,
-  .hard_skills__item:hover .transparent-img {
-    transform: rotate3d(0, 1, 0, 6rad);
   }
   .hard_skills__item img {
     height: 60%;
