@@ -1,0 +1,50 @@
+.loader-container {
+  background: linear-gradient(45deg, var(--dark-blue), #b5179e) fixed;
+  height: 100vh;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+}
+.loader-bg {
+  align-items: center;
+  backdrop-filter: blur(8px) brightness(0.6);
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  width: 100%;
+}
+.loader {
+  align-items: center;
+  display: flex;
+  height: 50px;
+  justify-content: space-between;
+  width: 60px;
+}
+.loader div {
+  animation: loader 1.8s linear infinite;
+  background-color: var(--light-turquoise);
+  width: 12px;
+}
+.loader div:nth-child(2) {
+  animation-delay: -0.25s;
+}
+
+@keyframes loader {
+  0% {
+    height: 12px;
+  }
+  25% {
+    height: 50px;
+  }
+  50% {
+    height: 10px;
+  }
+  75% {
+    height: 25px;
+  }
+  100% {
+    height: 12px;
+  }
+}

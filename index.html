@@ -9,6 +9,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="assets/css/loader.css" />
     <link rel="stylesheet" href="assets/css/base.css" />
     <link rel="stylesheet" href="assets/css/head.css" />
     <link rel="stylesheet" href="assets/css/banner.css" />
@@ -25,6 +26,15 @@
   </head>
   <body>
     <header class="head">
+      <div class="loader-container">
+        <div class="loader-bg">
+          <div class="loader">
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+        </div>
+      </div>
       <nav class="head__nav">
         <ul class="head__list">
           <li class="head__item logo-item">
@@ -59,12 +69,6 @@
               <img src="assets/img/nav/proyects.png" alt=""
             /></a>
           </li>
-          <!-- <li class="head__item">
-            <a href="mailto:davidcassiet@gmail.com"
-              ><h5>Contacto</h5>
-              <img src="assets/img/nav/contact.png" alt=""
-            /></a>
-          </li> -->
         </ul>
       </nav>
     </header>
@@ -101,7 +105,7 @@
                 class="mail"
                 target="_blank"
                 title="Mail"
-                ><i class="fa-solid fa-envelope"></i></i
+                ><i class="fa-solid fa-envelope"></i
               ></a>
             </li>
             <li class="banner__item item_cv">
@@ -122,7 +126,11 @@
           </div>
         </div>
         <div class="banner__model-container">
-          <img src="assets/img/model/3Dmodel.png" class="banner__model_img" alt="modelo 3d"/>
+          <img
+            src="assets/img/model/3Dmodel.png"
+            class="banner__model_img"
+            alt="modelo 3d"
+          />
         </div>
         <ul class="banner__media">
           <li class="banner__item">
@@ -149,7 +157,7 @@
               class="mail"
               target="_blank"
               title="Mail"
-              ><i class="fa-solid fa-envelope"></i></i
+              ><i class="fa-solid fa-envelope"></i
             ></a>
           </li>
           <li class="banner__item item_cv">
@@ -203,19 +211,11 @@
         <h4 class="section-title">Herramientas</h4>
         <ul class="hard_skills__list">
           <li class="hard_skills__item">
-            <img
-              src="assets/img/skills/java.png"
-              alt="java logo"
-              loading="eager"
-            />
+            <img src="assets/img/skills/java.png" alt="java logo" />
             <p>Java</p>
           </li>
           <li class="hard_skills__item">
-            <img
-              src="assets/img/skills/spring.png"
-              alt="spring logo"
-              loading="eager"
-            />
+            <img src="assets/img/skills/spring.png" alt="spring logo" />
             <p>Spring</p>
           </li>
           <li class="hard_skills__item">
@@ -226,11 +226,7 @@
             <p>Spring boot</p>
           </li>
           <li class="hard_skills__item">
-            <img
-              src="assets/img/skills/python.png"
-              alt="python logo"
-              loading="eager"
-            />
+            <img src="assets/img/skills/python.png" alt="python logo" />
             <p>Python</p>
           </li>
           <li class="hard_skills__item">
@@ -238,7 +234,6 @@
               id="djangoLogo"
               src="assets/img/skills/django.png"
               alt="django logo"
-              loading="eager"
             />
             <p>Django</p>
           </li>
@@ -247,7 +242,6 @@
               class="transparent-img"
               src="assets/img/skills/javascript.png"
               alt="javascript logo"
-              loading="eager"
             />
             <p>JavaScript</p>
           </li>
@@ -256,7 +250,6 @@
               class="transparent-img"
               src="assets/img/skills/html5.png"
               alt="html5 logo"
-              loading="eager"
             />
             <p>HTML5</p>
           </li>
@@ -278,19 +271,11 @@
             <p>Git</p>
           </li>
           <li class="hard_skills__item">
-            <img
-              src="assets/img/skills/mysql.png"
-              alt="mysql logo"
-              loading="eager"
-            />
+            <img src="assets/img/skills/mysql.png" alt="mysql logo" />
             <p>MySQL</p>
           </li>
           <li class="hard_skills__item">
-            <img
-              src="assets/img/skills/postman.png"
-              alt="postman logo"
-              loading="eager"
-            />
+            <img src="assets/img/skills/postman.png" alt="postman logo" />
             <p>Postman</p>
           </li>
         </ul>
@@ -369,11 +354,11 @@
                     Version web del juego del Ahorcado.
                   </p>
                   <div class="proyects__item-logosContainer">
-                    <img src="assets/img/skills/html5.png" alt="html5 logo" />
-                    <img src="assets/img/skills/css3.png" alt="css3 logo" />
+                    <img src="assets/img/skills/html5.png" alt="html5 logo" title="HTML5"/>
+                    <img src="assets/img/skills/css3.png" alt="css3 logo" title="CSS3"/>
                     <img
                       src="assets/img/skills/javascript.png"
-                      alt="javascript logo"
+                      alt="javascript logo" title="JavaScript"
                     />
                   </div>
                 </div>
@@ -408,12 +393,17 @@
                     aniversario de la provincialización de Chaco.
                   </p>
                   <div class="proyects__item-logosContainer">
-                    <img src="assets/img/skills/python.png" alt="python logo" />
-                    <img src="assets/img/skills/html5.png" alt="html5 logo" />
-                    <img src="assets/img/skills/css3.png" alt="css3 logo" />
+                    <img src="assets/img/skills/python.png" alt="python logo" title="Python"/>
+                    <img src="assets/img/skills/html5.png" alt="html5 logo" title="HTML5"/>
+                    <img src="assets/img/skills/css3.png" alt="css3 logo" title="CSS3"/>
                     <img
                       src="assets/img/skills/javascript.png"
-                      alt="javascript logo"
+                      alt="javascript logo" title="JavaScript"
+                    />
+                    <img
+                      src="assets/img/skills/mysql.png"
+                      alt="mysql logo"
+                      title="MySQL"
                     />
                   </div>
                 </div>
@@ -447,11 +437,20 @@
                     Encriptador de texto.
                   </p>
                   <div class="proyects__item-logosContainer">
-                    <img src="assets/img/skills/html5.png" alt="html5 logo" />
-                    <img src="assets/img/skills/css3.png" alt="css3 logo" />
+                    <img
+                      src="assets/img/skills/html5.png"
+                      alt="html5 logo"
+                      title="HTML5"
+                    />
+                    <img
+                      src="assets/img/skills/css3.png"
+                      alt="css3 logo"
+                      title="CSS3"
+                    />
                     <img
                       src="assets/img/skills/javascript.png"
                       alt="javascript logo"
+                      title="JavaScript"
                     />
                   </div>
                 </div>
@@ -483,8 +482,13 @@
                     <img
                       src="assets/img/skills/java_color.png"
                       alt="java logo"
+                      title="Java"
                     />
-                    <img src="assets/img/skills/mysql.png" alt="mysql logo" />
+                    <img
+                      src="assets/img/skills/mysql.png"
+                      alt="mysql logo"
+                      title="MySQL"
+                    />
                   </div>
                 </div>
               </div>
@@ -493,5 +497,6 @@
         </ul>
       </section>
     </main>
+    <script src="assets/js/loader.js"></script>
   </body>
 </html>
